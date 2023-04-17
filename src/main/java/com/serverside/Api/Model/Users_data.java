@@ -23,6 +23,7 @@ public class Users_data {
     private String first_name;
 
     @Column(name="second_name")
+
     private String second_name;
 
     @Column(name="amount")
