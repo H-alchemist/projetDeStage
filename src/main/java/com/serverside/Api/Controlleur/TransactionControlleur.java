@@ -25,19 +25,10 @@ public class TransactionControlleur {
         return new ResponseEntity<Transaction>(transactionDao.add(object), HttpStatus.OK) ;
     }
 
-    @GetMapping("/transaction/getAll")
-    public List<Transaction> getAllT(){
 
 
-        return transactionDao.getAll();
-    }
 
 
-    @DeleteMapping("/transaction/deleteT")
-    public boolean deleteT(){
-        transactionDao.delete();
-        return true;
-    }
 
 
 
