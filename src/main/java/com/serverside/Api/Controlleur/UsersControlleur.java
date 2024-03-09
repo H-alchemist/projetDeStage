@@ -31,7 +31,7 @@ public class UsersControlleur {
          try {
              return new ResponseEntity<Users_data>(userdao.add(u), HttpStatus.OK);
          }catch (Exception e){
-             return new ResponseEntity<String>("440" , HttpStatus.OK);
+             return new ResponseEntity<String>( HttpStatus.OK);
          }
     }
     @GetMapping("/users/getAll")
